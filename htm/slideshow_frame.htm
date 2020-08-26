@@ -121,6 +121,19 @@
     #countdown {
         /* display: none; */
     }
+    @media only screen and (max-width: 768px) {
+  /* For Tablets and HD Phones: */
+ [class*="carousel"] {
+  height: 320px !important;
+  
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* For mobile phones: */
+ [class*="carousel"] {
+   height: 180px !important;
+  }
+} 
 </style>
         <body>
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="12780">
