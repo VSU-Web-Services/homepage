@@ -104,20 +104,7 @@
     hr {
         border-top: 1px solid #79afff;
     }
-    .advertise {
-    background-image: url(https://d3hyc9chiaydi3.cloudfront.net/titans/images/morrill_act_130th_banner_1903x600.png);
-    width: 100%;
-    height: 600px;
-    position: relative;
-    display: block;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    padding-top: 0px;
-    color: white;
-    text-shadow: 3px 5px 7px black;
-    border-radius: 5px;
-    }
+
     .hero{
     background-image: url(https://d3hyc9chiaydi3.cloudfront.net/titans/images/herobeta1.jpg);
     width: 100%;
@@ -170,7 +157,49 @@
         border-radius: 2px;
         text-shadow: 1px 2px 4px rgba( 73, 122, 171, 1);
     }
-    
+    .jumbotron.advertise {
+    background-image: url(https://d3hyc9chiaydi3.cloudfront.net/titans/images/morrill_act_130th_banner_1903x600.png);
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: top;
+    color: white;
+    text-shadow: 3px 5px 7px black;
+    border-radius: 5px;
+    background-size: contain;
+}
+
+.carousel{
+        position:relative;
+        height: 465px;*/
+    }
+
+
+  /* For Tablets and HD Phones: */
+ [class*="carousel"] {
+  height: 465px !important;
+  
+  }
+}
+ @media only screen and (max-width: 768px) {
+  /* For Tablets and HD Phones: */
+ [class*="carousel"] {
+  height: 320px !important;
+  
+  }
+  .jumbotron.advertise{
+    height:167px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  /* For mobile phones: */
+ [class*="carousel"] {
+   height: 180px !important;
+  }
+} 
 </style>
         <body ng-app="app" ng-controller="appCtrl" onload=' location.href="#engagement" '>
             <main role="main">
@@ -232,9 +261,9 @@
                         </div>
                         <div class="col-lg-9">
                             <br />
-                            <div>Click the play button below to view an important message from Dr. Abdullah</div>
-                            <iframe scrolling="no" noscroll height="465" id="slideshow" name="slideshow" title="Slideshow iFrame" src="https://d3hyc9chiaydi3.cloudfront.net/titans/scripts/htm/promo_video_frame.htm" style="border:none;" title="Neumorphism Hypercube" width="100%"></iframe>
-                            <!--<iframe scrolling="no" noscroll height="465" id="slideshow" name="slideshow" title="Slideshow iFrame" src="https://d3hyc9chiaydi3.cloudfront.net/titans/scripts/htm/slideshow_frame.htm" style="border:none;" title="Neumorphism Hypercube" width="100%"></iframe>-->
+                            <div><span>&nbsp;</span><span id="helper-message">Click the play button below to view an important message from Dr. Abdullah</span></div>
+                            <iframe scrolling="no" height="auto" noscroll id="slideshow" class="carousel" name="slideshow" title="Slideshow iFrame" src="https://d3hyc9chiaydi3.cloudfront.net/titans/scripts/htm/promo_video_frame.htm" style="border:none;" title="Tesseract Hypercube" width="100%"></iframe>
+                            <!--<iframe scrolling="no" noscroll height="465" id="slideshow" name="slideshow" title="Slideshow iFrame" src="https://d3hyc9chiaydi3.cloudfront.net/titans/scripts/htm/slideshow_frame.htm" style="border:none;" title="Tesseract Hypercube" width="100%"></iframe>-->
                             <br />
                             <br />
                         </div>
@@ -338,137 +367,206 @@
 
                                                                                                     <div class="row">
                     <div class="col-lg-12 adSlot1">
-                    <section class="jumbotron advertise" style="padding-top:10%;">
-                    <p class="lead"><br /><br /><br /><br /><br /><br /><br />
+                    <section class="jumbotron advertise" style="padding-top:10%;"><p class="lead"><br /><br />
                     <a class="btn btn-primary btn-lg" href="https://www.ext.vsu.edu/s/VSU_130th-Anniversary-Fact-Sheet_8_21_20_Final_Use-This-Version.pdf" target="_blank" role="button">Learn More</a>
                     </p>
                     </section>
                     </div>
+                         
                     </div>
 
 
-                                                                                                    <div class="row">
-                                                                                                        <div class="col-lg-4">
-                                                                                                            <a href="https://www.youtube.com/watch?v=tsLfF_XMRMg&feature=youtu.be" target="_blank">
-                                                                                                                <img src="https://d3hyc9chiaydi3.cloudfront.net/titans/images/vsu_transform_sm.jpg" alt="Poster Advertisement 1" />
-                                                                                                            </a>
-                                                                                                        </div>
-                                                                                                        <div class="col-lg-4">
-                                                                                                            <h3>VSU IN THE NEWS 
-                                                                                                                <i class="far fa-newspaper"></i>
-                                                                                                            </h3>
-                                                                                                            <br />
-                                                                                                            <div class="col-lg-12 left">
-                                                                                                                <a class="section-link" href="https://www.progress-index.com/news/20200710/online-only-student-deportation-sends-wrong-message-vsu-says " target="_blank">Online only student deportations sends wrong message, VSU says.</a>
-                                                                                                            </div>
-                                                                                                           
-                                                                                                                <br>
-                                                                                                                    <hr>
-                                                                                                                        <div class="col-lg-12 left">
-                                                                                                                            <a class="section-link" href="https://urbanviewsweekly.com/2020/07/08/vsu-mathematics-and-economics-student-breaking-barriers/" target="_blank">VSU MATHEMATICS AND ECONOMICS STUDENT BREAKING BARRIERS</a>
-                                                                                                                        </div>
-                                                                                                                        <br>
-                                                                                                                           
-                                                                                                                                <hr>
-                                                                                                                                    <div class="col-lg-12 left">
-                                                                                                                                        <a class="section-link" href="https://www.nbc12.com/2020/05/26/vsu-president-pens-letter-congress-additional-funding-hbcus/" target="_blank">VSU President pens letter to Congress for additional funding for HBCU's</a><br>
-                                                                                                                                    </div>
-                                                                                                                                    
-                                                                                                                                       <br>
-                                                                                                                                            <hr>
-                                                                                                                                                <div class="col-lg-12 left">
-                                                                                                                                                    <a class="section-link" href="https://www.google.com/url?rct=j&sa=t&url=https://www.nbc12.com/2020/05/24/vsu-offering-build-your-own-aquaponics-garden/&ct=ga&cd=CAEYACoTODg0NzM4Nzc2MDg1NTUzMzQ3OTIaODMwYjgzZTUyMDU3MGMzZjpjb206ZW46VVM&usg=AFQjCNFNVs44fR-oIEGJw2nnKG8QPfnRAA" target="_blank">VSU offering a build your own aquaponics garden</a>
-                                                                                                                                                </div>
-                                                                                                                                                <br>
-                                                                                                                                                    <hr>
-                                                                                                                                                    </div>
-                                                                                                                                                    <div class="col-lg-4">
-                                                                                                                                                        <h3>EVENTS 
-                                                                                                                                                            <a href="http://www.vsu.edu/news/calendar/index.php" target="_parent">
-                                                                                                                                                                <i class="far fa-calendar-alt"></i> See More
-                                                                                                                                                            </a>
-                                                                                                                                                        </h3>
-                                                                                                                                                        <br />
-                                                                                                                                                        <div class="col-lg-2">
-                                                                                                                                                            <div class="calendar">AUG
-                                                                                                                                                                <br />
-                                                                                                                                                                <strong style="font-size: 1.6em;">4</strong>
-                                                                                                                                                            </div>
-                                                                                                                                                        </div>
-                                                                                                                                                        <div class="col-lg-10 left">
-                                                                                                                                                            <a class="section-link" href="http://www.vsu.edu/news/calendar/2020/07/student-leadership-retreat.php" target="_blank">2020 Student Leadership Retreat</a>
-                                                                                                                                                        </div>
-                                                                                                                                                        <br />
-                                                                                                                                                        <br />
-                                                                                                                                                        <br />
-                                                                                                                                                        <hr>
-                                                                                                                                                            <div class="col-lg-2">
-                                                                                                                                                                <div class="calendar">JUL
-                                                                                                                                                                    <br />
-                                                                                                                                                                    <strong style="font-size: 1.6em;">23</strong>
-                                                                                                                                                                </div>
-                                                                                                                                                            </div>
-                                                                                                                                                            <div class="col-lg-10 left">
-                                                                                                                                                                <a class="section-link" href="https://livestream.com/accounts/22552417/events/9219853" target="_blank">Parent / Guardian Town Hall
-                                                                                                                                                                    <br />6:00 PM EST
-                                                                                                                                                                </a>
-                                                                                                                                                            </div>
-                                                                                                                                                            <br />
-                                                                                                                                                            <br />
-                                                                                                                                                            <br />
-                                                                                                                                                            <hr>
-                                                                                                                                                               
-                                                                                                                                                                <div class="col-lg-2">
-                                                                                                                                                                    <div class="calendar">JUL
-                                                                                                                                                                        <br />
-                                                                                                                                                                        <strong style="font-size: 1.6em;">16</strong>
-                                                                                                                                                                    </div>
-                                                                                                                                                                </div>
-                                                                                                                                                                <div class="col-lg-10 left">
-                                                                                                                                                                    <a class="section-link" href="https://livestream.com/vsu/vsu20200716" target="_blank">Student Town Hall
-                                                                                                                                                                        <br /> 5:30 PM EST
-                                                                                                                                                                    </a>
-                                                                                                                                                                    <br />
-                                                                                                                                                                </div>
-                                                                                                                                                                <br />
-                                                                                                                                                                <br />
-                                                                                                                                                                <br />
-                                                                                                                                                                <hr>
-                                                                                                                                                                    <br />
-                                                                                                                                                                </div>
-                                                                                                                                                            </div>
-                                                                                                                                                        </section>
-                                                                                                                                                    </main>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <a href="https://www.youtube.com/watch?v=tsLfF_XMRMg&feature=youtu.be" target="_blank">
+                                <img src="https://d3hyc9chiaydi3.cloudfront.net/titans/images/vsu_transform_sm.jpg" alt="Poster Advertisement 1" />
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <h3>VSU IN THE NEWS 
+                                <i class="far fa-newspaper"></i>
+                            </h3>
+                            <br />
+                            <div class="col-lg-12 left">
+                                <a class="section-link" href="https://www.progress-index.com/news/20200710/online-only-student-deportation-sends-wrong-message-vsu-says " target="_blank">Online only student deportations sends wrong message, VSU says.</a>
+                            </div>
+                           
+                                <br>
+                                    <hr>
+                                        <div class="col-lg-12 left">
+                                            <a class="section-link" href="https://urbanviewsweekly.com/2020/07/08/vsu-mathematics-and-economics-student-breaking-barriers/" target="_blank">VSU MATHEMATICS AND ECONOMICS STUDENT BREAKING BARRIERS</a>
+                                        </div>
+                                        <br>
+                                           
+                                                <hr>
+                                                    <div class="col-lg-12 left">
+                                                        <a class="section-link" href="https://www.nbc12.com/2020/05/26/vsu-president-pens-letter-congress-additional-funding-hbcus/" target="_blank">VSU President pens letter to Congress for additional funding for HBCU's</a><br>
+                                                    </div>
+                                                    
+                                                       <br>
+                                                            <hr>
+                                                                <div class="col-lg-12 left">
+                                                                    <a class="section-link" href="https://www.google.com/url?rct=j&sa=t&url=https://www.nbc12.com/2020/05/24/vsu-offering-build-your-own-aquaponics-garden/&ct=ga&cd=CAEYACoTODg0NzM4Nzc2MDg1NTUzMzQ3OTIaODMwYjgzZTUyMDU3MGMzZjpjb206ZW46VVM&usg=AFQjCNFNVs44fR-oIEGJw2nnKG8QPfnRAA" target="_blank">VSU offering a build your own aquaponics garden</a>
+                                                                </div>
+                                                                <br>
+                                                                    <hr>
+                                                                    </div>
+                                                                    <div class="col-lg-4">
+                                                                        <h3>EVENTS 
+                                                                            <a href="http://www.vsu.edu/news/calendar/index.php" target="_parent">
+                                                                                <i class="far fa-calendar-alt"></i> See More
+                                                                            </a>
+                                                                        </h3>
+                                                                        <br />
+                                                                        <div class="col-lg-2">
+                                                                            <div class="calendar">AUG
+                                                                                <br />
+                                                                                <strong style="font-size: 1.6em;">4</strong>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-10 left">
+                                                                            <a class="section-link" href="http://www.vsu.edu/news/calendar/2020/07/student-leadership-retreat.php" target="_blank">2020 Student Leadership Retreat</a>
+                                                                        </div>
+                                                                        <br />
+                                                                        <br />
+                                                                        <br />
+                                                                        <hr>
+                                                                            <div class="col-lg-2">
+                                                                                <div class="calendar">JUL
+                                                                                    <br />
+                                                                                    <strong style="font-size: 1.6em;">23</strong>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-10 left">
+                                                                                <a class="section-link" href="https://livestream.com/accounts/22552417/events/9219853" target="_blank">Parent / Guardian Town Hall
+                                                                                    <br />6:00 PM EST
+                                                                                </a>
+                                                                            </div>
+                                                                            <br />
+                                                                            <br />
+                                                                            <br />
+                                                                            <hr>
+                                                                               
+                                                                                <div class="col-lg-2">
+                                                                                    <div class="calendar">JUL
+                                                                                        <br />
+                                                                                        <strong style="font-size: 1.6em;">16</strong>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-lg-10 left">
+                                                                                    <a class="section-link" href="https://livestream.com/vsu/vsu20200716" target="_blank">Student Town Hall
+                                                                                        <br /> 5:30 PM EST
+                                                                                    </a>
+                                                                                    <br />
+                                                                                </div>
+                                                                                <br />
+                                                                                <br />
+                                                                                <br />
+                                                                                <hr>
+                                                                                    <br />
+                                                                                </div>
+                                                                            </div>
+                                                                        </section>
+                                                                    </main>
 
 
-                                                                                                                                                </body>
-                                                                                                                                                <!-- Minified jQuery JavaScript -->
-                                                                                                                                                <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-                                                                                                                                                <script type="text/javascript">
-// 
-                                        
+</body>
+<!-- Minified jQuery JavaScript -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+                                     
 (function($) {
 
-    // A $( document ).ready() block.
+// A $( document ).ready() block.
 $( document ).ready(function() {
 
     $( "#promo_video" ).addClass("active");
 
     $( ".app" ).click(function() {
-      $(".app").removeClass("active");
-      $(this).addClass("active");
+        $(".app").removeClass("active");
+        $(this).addClass("active");
+        $("#helper-message").addClass("hide");
+        updateIframe();
+    });
+
+    $( "#promo_video" ).click(function() {
+        $("#helper-message").removeClass("hide");
     });
 
     $(".slideshow").click(function() {
-      $(".app").removeClass("active");
+        $(".app").removeClass("active");
     });
 
-});
+    // Fullscreen code
+    // Maximize & Minimize Fullscreen
+
+    // var iframe  = document.getElementById("slideshow");
+    var iframe;
+    //var element = iframe.contentWindow.document.getElementsByTagName("i")[0];
+    var element;
+
+    function updateIframe() {
+        var iframe  = $( "#slideshow" ).contents();
+        var element = $(iframe).find("i").first();
+    }
+
+    //fullscreen code
+    // Maximize & Minimize Fullscreen
+    $(element).click(function() {
+
+        console.log("iframe element click");
+      
+        // Supports most browsers and their versions.
+          function toggleFull() {
+              var elem = document.documentElement; // Make the body go full screen.
+              var isInFullScreen = (document.fullScreenElement && document.fullScreenElement !== null) ||  (document.mozFullScreen || document.webkitIsFullScreen);
+
+              if (isInFullScreen) {
+                  cancelFullScreen(document);
+              } else {
+                  requestFullScreen(elem);
+              }
+              return false;
+          }
+          toggleFull();
+      });
+
+      function cancelFullScreen(el) {
+            var requestMethod = el.cancelFullScreen||el.webkitCancelFullScreen||el.mozCancelFullScreen||el.exitFullscreen;
+            if (requestMethod) { // cancel full screen.
+                requestMethod.call(el);
+            } else if (typeof window.ActiveXObject !== "undefined") { // Older IE.
+                var wscript = new ActiveXObject("WScript.Shell");
+                if (wscript !== null) {
+                    wscript.SendKeys("{F11}");
+                }
+            }
+        }
+
+        function requestFullScreen(el) {
+            // Supports most browsers and their versions.
+            var requestMethod = el.requestFullScreen || el.webkitRequestFullScreen || el.mozRequestFullScreen || el.msRequestFullscreen;
+
+            if (requestMethod) { // Native full screen.
+                requestMethod.call(el);
+            } else if (typeof window.ActiveXObject !== "undefined") { // Older IE.
+                var wscript = new ActiveXObject("WScript.Shell");
+                if (wscript !== null) {
+                    wscript.SendKeys("{F11}");
+                }
+            }
+            return false
+        } 
+
+  //End of fullscreen code
+
+}); //End of document ready
 
 
 })(jQuery); // pass another library here if required
 
-                                    </script>
+</script>
                                                                                                                                                 <!-- Latest compiled and minified JavaScript -->
                                                                                                                                                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
                                                                                                                                                 <!-- Minified AngularJS -->
