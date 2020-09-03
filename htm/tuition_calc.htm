@@ -4,23 +4,6 @@
     <link href="https://d3hyc9chiaydi3.cloudfront.net/titans/scripts/css/tuition-calc.css" rel="stylesheet" />
     <div class="app-panel">
         <div ng-app="app" ng-controller="appCtrl">
-            <div class="row set">
-                <div class="col-sm-1 col-xs-1 menu h-text h-color">
-                    <a   id="btn-menu">
-                        <i class="fa fa-bars" data-toggle="tooltip" title="Calculator Navigation"></i>
-                    </a>
-                </div>
-                <!-- header section -->
-                <div class="mobile-menu btn-toggle nav" id="the-menu">
-                    <div class="mobile-navcontain">
-                        <a class="pageOne active">Tuition Type</a>
-                        <a class="pageThree"ng-show="model.init.campus == 'ON-CAMPUS'">Room and Board</a>
-                        <a class="pageFive">Misc Fees</a>
-                        <a class="pageFour">Materials Fees</a>
-                        <a class="pageTwo"ng-show="model.init.campus && model.init.tuitiontype">Summary</a>
-                    </div>
-                </div>
-                </div>
                 <!-- end menu -->
                 <div class="nav">
                     <div class="navcontain">
@@ -34,7 +17,7 @@
                 <header>
                     <h2 id="title">VSU Tuition Calculator
                     
-                        <i class="fas fa-expand-arrows-alt" data-toggle="tooltip" title="Toggle Fullscreen"></i>
+                        <i id="toggleFullscreen" class="fas fa-expand" data-toggle="tooltip" title="Toggle Fullscreen"></i>
                     </h2>
                     <span id="subtitle">&nbsp;{{model.title | uppercase}}</span>
                 </header>

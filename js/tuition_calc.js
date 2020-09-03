@@ -13,25 +13,28 @@ var app = angular.module('app',
   // A $( document ).ready() block.
 $( document ).ready(function() { 
   
-  //fullscreen code
+   //fullscreen code
     // Maximize & Minimize Fullscreen
-    	$('#title').click(function() {
-	        	        // Supports most browsers and their versions.
-	        function toggleFull() {
-	            var elem = document.documentElement; // Make the body go full screen.
-	            var isInFullScreen = (document.fullScreenElement && document.fullScreenElement !== null) ||  (document.mozFullScreen || document.webkitIsFullScreen);
+    $('#toggleFullscreen').click(function() {
 
-	            if (isInFullScreen) {
-	                cancelFullScreen(document);
-	            } else {
-	                requestFullScreen(elem);
-	            }
-	            return false;
-	        }
-	        toggleFull();
-	    });
+        $('#toggleFullscreen').toggleClass('fa-expand fa-compress');
+      
+                    // Supports most browsers and their versions.
+          function toggleFull() {
+              var elem = document.documentElement; // Make the body go full screen.
+              var isInFullScreen = (document.fullScreenElement && document.fullScreenElement !== null) ||  (document.mozFullScreen || document.webkitIsFullScreen);
 
-	    function cancelFullScreen(el) {
+              if (isInFullScreen) {
+                  cancelFullScreen(document);
+              } else {
+                  requestFullScreen(elem);
+              }
+              return false;
+          }
+          toggleFull();
+      });
+
+      function cancelFullScreen(el) {
             var requestMethod = el.cancelFullScreen||el.webkitCancelFullScreen||el.mozCancelFullScreen||el.exitFullscreen;
             if (requestMethod) { // cancel full screen.
                 requestMethod.call(el);
@@ -86,9 +89,6 @@ $(document).ready(function(){
   });
   });
   
-  $(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();
-  });
   
   $( "tr" ).click(function() {
     if(event.target.type !== 'checkbox'){
