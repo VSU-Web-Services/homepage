@@ -197,6 +197,9 @@
  [class*="carousel"] {
    height: 180px !important;
   }
+    .jumbotron.advertise{
+    height:auto!important;
+  }
 } 
 </style>
         <body ng-app="app" ng-controller="appCtrl" onload=' location.href="#engagement" '>
@@ -253,15 +256,15 @@
                             <!-- <br /><button class="btn app" ng-click="hideShow=true" onclick="window.open('http://www.vsu.edu/admissions/course-equivalency/course-equivalency.htm', 'slideshow')">Course Equivalency</button>-->
                             <br />
                           
-                            <button class="btn slideshow" ng-click="hideShow=false" ng-hide="!hideShow" ng-init="hideShow=true" onclick="window.open('https://d3hyc9chiaydi3.cloudfront.net/titans/scripts/htm/slideshow_frame.htm', 'slideshow')">Show Slideshow</button>
+                            <button class="btn app slideshow" ng-click="hideShow=false" ng-hide="!hideShow" ng-init="hideShow=false" onclick="window.open('https://d3hyc9chiaydi3.cloudfront.net/titans/scripts/htm/slideshow_frame.htm', 'slideshow')">Show Slideshow</button>
                             <br />
                             <br />
                         </div>
                         <div class="col-lg-9">
                             <br />
-                            <div><span>&nbsp;</span><span id="helper-message">Click the play button below to view an important message from Dr. Abdullah</span></div>
-                            <iframe scrolling="no" height="auto" noscroll id="slideshow" class="carousel" name="slideshow" title="Slideshow iFrame" src="https://d3hyc9chiaydi3.cloudfront.net/titans/scripts/htm/promo_video_frame.htm" style="border:none;" title="Tesseract Hypercube" width="100%"></iframe>
-                            <!--<iframe scrolling="no" noscroll height="465" id="slideshow" name="slideshow" title="Slideshow iFrame" src="https://d3hyc9chiaydi3.cloudfront.net/titans/scripts/htm/slideshow_frame.htm" style="border:none;" title="Tesseract Hypercube" width="100%"></iframe>-->
+                            <div><span>&nbsp;</span><span id="helper-message" class="hide">Click the play button below to view an important message from Dr. Abdullah</span></div>
+                            <!--<iframe scrolling="no" height="auto" noscroll id="slideshow" class="carousel" name="slideshow" title="Slideshow iFrame" src="https://d3hyc9chiaydi3.cloudfront.net/titans/scripts/htm/promo_video_frame.htm" style="border:none;" title="Tesseract Hypercube" width="100%"></iframe>-->
+                            <iframe scrolling="no" noscroll height="465" id="slideshow" name="slideshow" title="Slideshow iFrame" src="https://d3hyc9chiaydi3.cloudfront.net/titans/scripts/htm/slideshow_frame.htm" style="border:none;" title="Tesseract Hypercube" width="100%"></iframe>
                             <br />
                             <br />
                         </div>
@@ -502,7 +505,7 @@
 // A $( document ).ready() block.
 $( document ).ready(function() {
 
-    $( "#promo_video" ).addClass("active");
+    // $( "#promo_video" ).addClass("active");
 
     $( ".app" ).click(function() {
         $(".app").removeClass("active");
