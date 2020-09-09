@@ -197,6 +197,9 @@
  [class*="carousel"] {
    height: 180px !important;
   }
+    .jumbotron.advertise{
+    height:auto!important;
+  }
 } 
 </style>
         <body ng-app="app" ng-controller="appCtrl" onload=' location.href="#engagement" '>
@@ -253,15 +256,15 @@
                             <!-- <br /><button class="btn app" ng-click="hideShow=true" onclick="window.open('http://www.vsu.edu/admissions/course-equivalency/course-equivalency.htm', 'slideshow')">Course Equivalency</button>-->
                             <br />
                           
-                            <button class="btn slideshow" ng-click="hideShow=false" ng-hide="!hideShow" ng-init="hideShow=true" onclick="window.open('https://d3hyc9chiaydi3.cloudfront.net/titans/scripts/htm/slideshow_frame.htm', 'slideshow')">Show Slideshow</button>
+                            <button class="btn app slideshow" ng-click="hideShow=false" ng-hide="!hideShow" ng-init="hideShow=false" onclick="window.open('https://d3hyc9chiaydi3.cloudfront.net/titans/scripts/htm/slideshow_frame.htm', 'slideshow')">Show Slideshow</button>
                             <br />
                             <br />
                         </div>
                         <div class="col-lg-9">
                             <br />
-                            <div><span>&nbsp;</span><span id="helper-message">Click the play button below to view an important message from Dr. Abdullah</span></div>
-                            <iframe scrolling="no" height="auto" noscroll id="slideshow" class="carousel" name="slideshow" title="Slideshow iFrame" src="https://d3hyc9chiaydi3.cloudfront.net/titans/scripts/htm/promo_video_frame.htm" style="border:none;" title="Tesseract Hypercube" width="100%"></iframe>
-                            <!--<iframe scrolling="no" noscroll height="465" id="slideshow" name="slideshow" title="Slideshow iFrame" src="https://d3hyc9chiaydi3.cloudfront.net/titans/scripts/htm/slideshow_frame.htm" style="border:none;" title="Tesseract Hypercube" width="100%"></iframe>-->
+                            <div><span>&nbsp;</span><span id="helper-message" class="hide">Click the play button below to view an important message from Dr. Abdullah</span></div>
+                            <!--<iframe scrolling="no" height="auto" noscroll id="slideshow" class="carousel" name="slideshow" title="Slideshow iFrame" src="https://d3hyc9chiaydi3.cloudfront.net/titans/scripts/htm/promo_video_frame.htm" style="border:none;" title="Tesseract Hypercube" width="100%"></iframe>-->
+                            <iframe scrolling="no" noscroll height="465" id="slideshow" name="slideshow" title="Slideshow iFrame" src="https://d3hyc9chiaydi3.cloudfront.net/titans/scripts/htm/slideshow_frame.htm" style="border:none;" title="Tesseract Hypercube" width="100%"></iframe>
                             <br />
                             <br />
                         </div>
@@ -292,8 +295,19 @@
                                     <i class="fas fa-bullhorn"></i> See More
                                 </a>
                             </h3>
-                            
                             <br />
+                             <div class="col-lg-12 left">
+                                <a class="section-link" href="http://www.vsu.edu/news/announcements/2020/rogers-stadium-sellout.php" target="_blank">Rogers Stadium Virtual Sell Out</a>
+                            </div>
+                            <br />
+                            <hr />
+                             <div class="col-lg-12 left">
+                                <a class="section-link" href="http://www.vsu.edu/news/announcements/2020/campus-vote-project.php" target="_blank">Campus Vote Project</a>
+                            </div>
+                            <br />
+                            <hr />
+
+                            
                              <div class="col-lg-12 left">
                                 <a class="section-link" href="http://www.vsu.edu/news/announcements/2020/vsu-verizon-award.php" target="_blank">VSU awarded $50,000 from Verizon for Technology Support</a>
                             </div>
@@ -304,13 +318,6 @@
                                 <a class="section-link" href="http://www.vsu.edu/news/announcements/2020/2020-fall-conference.php" target="_blank">2020 Annual Fall Faculty and Staff Virtual Opening Conference</a>
                             </div>
                             <br />
-                                
-                                    <hr>
-                            
-                             <div class="col-lg-12 left">
-                                <a class="section-link" href="http://www.vsu.edu/news/announcements/2020/august-2020-bov-meeting.php" target="_blank">August 6, 2020 BOV Meeting Notice</a>
-                            </div>
-                            <br>
                                 
                                     <hr>
                             <div class="col-lg-12 left">
@@ -384,11 +391,18 @@
                             </h3>
                             <br />
                             <div class="col-lg-12 left">
-                                <a class="section-link" href="https://www.progress-index.com/news/20200710/online-only-student-deportation-sends-wrong-message-vsu-says " target="_blank">Online only student deportations sends wrong message, VSU says.</a>
+                                <a class="section-link" href="https://www.wric.com/community/positively-richmond/vsu-offering-groundbreaking-hbcus-history-course/" target="_blank">VSU offering groundbreaking HBCUs history course</a>
                             </div>
                            
                                 <br>
                                     <hr>
+                                    
+                                    <div class="col-lg-12 left">
+                                        <a class="section-link" href="https://www.progress-index.com/news/20200710/online-only-student-deportation-sends-wrong-message-vsu-says " target="_blank">Online only student deportations sends wrong message, VSU says.</a>
+                                    </div>
+                                   
+                                        <br>
+                                            <hr>
                                         <div class="col-lg-12 left">
                                             <a class="section-link" href="https://urbanviewsweekly.com/2020/07/08/vsu-mathematics-and-economics-student-breaking-barriers/" target="_blank">VSU MATHEMATICS AND ECONOMICS STUDENT BREAKING BARRIERS</a>
                                         </div>
@@ -488,7 +502,7 @@
 // A $( document ).ready() block.
 $( document ).ready(function() {
 
-    $( "#promo_video" ).addClass("active");
+    // $( "#promo_video" ).addClass("active");
 
     $( ".app" ).click(function() {
         $(".app").removeClass("active");
