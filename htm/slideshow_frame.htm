@@ -36,7 +36,7 @@
 	}
     div.carousel-inner > .item img {
         width: 1140px;
-        height: 465px !important;
+        height: 465px;
     }
 	a.section-link {
 		color: #fff;
@@ -110,6 +110,10 @@
         font-size: 1.5em;
         text-shadow: 2px 2px 4px #0b2753;
     }
+    .carousel-caption > button.btn {
+        position: absolute;
+        bottom: 25px;
+    }
 	h3 {
 		color: #79afff;
 		font-size: 1.2em;
@@ -121,16 +125,25 @@
     #countdown {
         /* display: none; */
     }
-    @media only screen and (max-width: 768px) {
+    .carousel{
+        position:relative;
+        height: 465px;
+    }
+@media only screen and (max-width: 1008px) and (min-width: 769px) {
+  /* For Small Monitors: */
+ .carousel {
+   height: 465px !important;
+  }
+} 
+ @media only screen and (max-width: 768px) and (min-width: 415px) {
   /* For Tablets and HD Phones: */
- [class*="carousel"] {
+ .carousel {
   height: 320px !important;
-  
   }
 }
-@media only screen and (max-width: 320px) {
-  /* For mobile phones: */
- [class*="carousel"] {
+@media only screen and (max-width: 414px) {
+  /* For Small Mobile Phones: */
+ .carousel {
    height: 180px !important;
   }
 } 
@@ -145,53 +158,41 @@
                 </ol>
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img alt="Top slide [825x465]" src="https://d3hyc9chiaydi3.cloudfront.net/titans/images/VSU Reopening_Ribbon-01.jpg" data-holder-rendered="true">
+                        <img class="carousel" alt="Top slide [825x465]" src="https://d3hyc9chiaydi3.cloudfront.net/titans/images/VSU Reopening_Ribbon-01.jpg" data-holder-rendered="true">
                             <div class="carousel-caption">
                                 <a href="https://d3hyc9chiaydi3.cloudfront.net/titans/documents/pdf/vsu_delayed_return_to_campus_testing_requirements_8_03_20.pdf" target="_blank">
                                     <button class="btn">LEARN MORE</button>
                                 </a>
-                                <br />
-                                <br />
-                                <br />
-                                <br />
+                               
                             </div>
                         </div>
                         
                             <div class="item">
-                                <img alt="First slide [825x465]" src="https://d3hyc9chiaydi3.cloudfront.net/titans/images/social_media_coronavirus_723_323.jpg" data-holder-rendered="true" style="z-index: 1000;">
+                                <img class="carousel" alt="First slide [825x465]" src="https://d3hyc9chiaydi3.cloudfront.net/titans/images/social_media_coronavirus_723_323.jpg" data-holder-rendered="true" style="z-index: 1000;">
                                     <div class="carousel-caption">
                                         <a href="http://www.vsu.edu/news/news/2020/VSU-Coronavirus-Updates.php" target="_blank">
                                             <button class="btn">LEARN MORE</button>
                                         </a>
-                                        <br />
-                                        <br />
-                                        <br />
-                                        <br />
+                                       
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <img alt="Second slide [825x465]" src="https://d3hyc9chiaydi3.cloudfront.net/titans/images/trojan_advance_100200_web_banner.jpg" data-holder-rendered="true">
+                                    <img class="carousel" alt="Second slide [825x465]" src="https://d3hyc9chiaydi3.cloudfront.net/titans/images/trojan_advance_100200_web_banner.jpg" data-holder-rendered="true">
                                         <div class="carousel-caption">
                                             <a href="http://www.vsu.edu/registrar/index.php" target="_blank">
                                                 <button class="btn">LEARN MORE</button>
                                             </a>
-                                            <br />
-                                            <br />
-                                            <br />
-                                            <br />
+                                          
                                         </div>
                                     </div>
                                    
                                         <div class="item">
-                                            <img alt="Fourth slide [825x465]" src="https://d3hyc9chiaydi3.cloudfront.net/titans/images/optimized_2020_2025_strategic_plan_logo_banner.jpg" data-holder-rendered="true">
+                                            <img class="carousel" alt="Fourth slide [825x465]" src="https://d3hyc9chiaydi3.cloudfront.net/titans/images/optimized_2020_2025_strategic_plan_logo_banner.jpg" data-holder-rendered="true">
                                                 <div class="carousel-caption">
                                                     <a href="http://www.vsu.edu/strategicplan/index.php" target="_blank">
                                                         <button class="btn">LEARN MORE</button>
                                                     </a>
-                                                    <br />
-                                                    <br />
-                                                    <br />
-                                                    <br />
+                                                   
                                                 </div>
                                             </div>
                                            
